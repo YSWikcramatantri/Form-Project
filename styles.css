@@ -1,0 +1,71 @@
+body {
+    background-image: url(bg.jpg);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group {
+    margin: 10px;
+    width: 100%;
+}
+
+h2 {
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+.button {
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: aliceblue;
+    border: 2px solid white;
+    border-radius: 6px;
+    background-color: #ffffff1a;
+}
+
+.button:hover {
+    animation-name: btn-color-hover;
+    animation-duration: 100ms;
+    background-color: #60dd0c3a;
+}
+
+.button:focus {
+    filter: brightness(5);
+}
+
+@keyframes btn-color-hover {
+    from {background-color: #ffffff1a}
+    to{background-color: #60dd0c3a;}
+}
+/*body {
+    background: no-repeat url(pexels-150086300-13804038.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}*/
+
+.container-m {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+
+    width: 65%;
+    height: 100%;
+    background: rgba(43, 51, 45, 0.555);
+    backdrop-filter: blur(4px);
+    color: aliceblue;
+    /*backdrop-filter: blur(8px);*/
+    font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+    font-weight: normal;
+    font-size: small;
+    align-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container-m {
+        width: 100%;
+    }
+}
